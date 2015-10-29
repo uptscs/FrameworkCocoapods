@@ -1,0 +1,14 @@
+PODS:
+  - FrameworkCocoapods (0.1.0)
+
+DEPENDENCIES:
+  - FrameworkCocoapods (from `../`)
+
+EXTERNAL SOURCES:
+  FrameworkCocoapods:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FrameworkCocoapods: 5b05acd1417618b2fd7a1b9fd9389d206e2ec571
+
+COCOAPODS: 0.39.0

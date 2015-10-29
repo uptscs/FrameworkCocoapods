@@ -1,0 +1,25 @@
+{
+  "name": "FrameworkCocoapods",
+  "version": "0.1.0",
+  "summary": "A short description of FrameworkCocoapods.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/FrameworkCocoapods",
+  "license": "MIT",
+  "authors": {
+    "upendra.tripathi": "upendra.tripathi@oracle.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/FrameworkCocoapods.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "FrameworkCocoapods": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

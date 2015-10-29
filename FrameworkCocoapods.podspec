@@ -1,30 +1,15 @@
-#
-# Be sure to run `pod lib lint FrameworkCocoapods.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = "FrameworkCocoapods"
   s.version          = "0.1.0"
-  s.summary          = "A short description of FrameworkCocoapods."
+  s.summary          = "Testing Framework distribution with FrameworkCocoapods."
+s.description      = "This CocoaPod provides the ability to use a Framework that may have nothing :)."
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/FrameworkCocoapods"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/uptscs/FrameworkCocoapods"
   s.license          = 'MIT'
-  s.author           = { "upendra.tripathi" => "upendra.tripathi@oracle.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/FrameworkCocoapods.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Upendra Tripathi" => "uptscs@gmail.com" }
+  s.source           = { :git => "https://github.com/uptscs/FrameworkCocoapods.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/uptscs'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -33,8 +18,7 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'FrameworkCocoapods' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
