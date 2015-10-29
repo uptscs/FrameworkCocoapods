@@ -12,6 +12,7 @@
 		4D02480BC0DD7D719D2091CC18E02DFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		6FE6ACFDC88ABE9CD8C78372E6C97AF0 /* FrameworkCocoapods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E0C8D47CE180C64B13CD3DB8FF8AE9 /* FrameworkCocoapods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7137271F1BE2444D00205D46 /* Headers in Resources */ = {isa = PBXBuildFile; fileRef = 7137271E1BE2444D00205D46 /* Headers */; settings = {ASSET_TAGS = (); }; };
+		713727211BE244F600205D46 /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 713727201BE244F600205D46 /* TestFramework.h */; settings = {ASSET_TAGS = (); }; };
 		71571DC41BE2419D00E9AB47 /* libTestFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71571DC31BE2419D00E9AB47 /* libTestFramework.a */; settings = {ASSET_TAGS = (); }; };
 		7C8D120460E1E36BCBECCA23F69166A3 /* FrameworkCocoapods.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8A81AACE3BF64A2099EC7B7925A7DD /* FrameworkCocoapods.bundle */; };
 		81C0D94D26D042AECD2CFFC92089789F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -48,6 +49,7 @@
 		531175062D6DCB86DEEBA345E92C4A23 /* Pods-FrameworkCocoapods_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FrameworkCocoapods_Tests-dummy.m"; sourceTree = "<group>"; };
 		6BFB9ABABD0823F93EC7200F8DA2C2BD /* Pods-FrameworkCocoapods_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FrameworkCocoapods_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7137271E1BE2444D00205D46 /* Headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Headers; sourceTree = "<group>"; };
+		713727201BE244F600205D46 /* TestFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 		71571DC31BE2419D00E9AB47 /* libTestFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFramework.a; sourceTree = "<group>"; };
 		7E3659D988CB33FB5222974917BE3FF5 /* Pods-FrameworkCocoapods_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FrameworkCocoapods_Tests.modulemap"; sourceTree = "<group>"; };
 		9341CF6A3BCE8E638503BC1921397EC2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		8BA2A1EB82A15ACA29115194FD9D99DF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				713727201BE244F600205D46 /* TestFramework.h */,
 				9341CF6A3BCE8E638503BC1921397EC2 /* ReplaceMe.m */,
 			);
 			path = Classes;
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FE6ACFDC88ABE9CD8C78372E6C97AF0 /* FrameworkCocoapods-umbrella.h in Headers */,
+				713727211BE244F600205D46 /* TestFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ s.description      = "This CocoaPod provides the ability to use a Framework that
   s.resource_bundles = {
     'FrameworkCocoapods' => ['Pod/Assets/*.png']
   }
-   s.public_header_files = 'Pod/Headers/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
