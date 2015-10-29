@@ -11,6 +11,7 @@
 		4CC16736F57FEF991DADE56CC4365AEA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 9341CF6A3BCE8E638503BC1921397EC2 /* ReplaceMe.m */; };
 		4D02480BC0DD7D719D2091CC18E02DFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		6FE6ACFDC88ABE9CD8C78372E6C97AF0 /* FrameworkCocoapods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E0C8D47CE180C64B13CD3DB8FF8AE9 /* FrameworkCocoapods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71571DC41BE2419D00E9AB47 /* libTestFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71571DC31BE2419D00E9AB47 /* libTestFramework.a */; settings = {ASSET_TAGS = (); }; };
 		7C8D120460E1E36BCBECCA23F69166A3 /* FrameworkCocoapods.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC8A81AACE3BF64A2099EC7B7925A7DD /* FrameworkCocoapods.bundle */; };
 		81C0D94D26D042AECD2CFFC92089789F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		E16C75743721C48FB7CAFC828F1051B6 /* FrameworkCocoapods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D4F664B00AAF63FDC1649C0B376A8F /* FrameworkCocoapods-dummy.m */; };
@@ -45,6 +46,7 @@
 		40F0F1A7C88B3B300CB3C95EB53E7989 /* Pods-FrameworkCocoapods_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FrameworkCocoapods_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		531175062D6DCB86DEEBA345E92C4A23 /* Pods-FrameworkCocoapods_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FrameworkCocoapods_Tests-dummy.m"; sourceTree = "<group>"; };
 		6BFB9ABABD0823F93EC7200F8DA2C2BD /* Pods-FrameworkCocoapods_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FrameworkCocoapods_Tests-umbrella.h"; sourceTree = "<group>"; };
+		71571DC31BE2419D00E9AB47 /* libTestFramework.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFramework.a; sourceTree = "<group>"; };
 		7E3659D988CB33FB5222974917BE3FF5 /* Pods-FrameworkCocoapods_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FrameworkCocoapods_Tests.modulemap"; sourceTree = "<group>"; };
 		9341CF6A3BCE8E638503BC1921397EC2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		9E78624EE32AE5E0847BD88F5D0576A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71571DC41BE2419D00E9AB47 /* libTestFramework.a in Frameworks */,
 				81C0D94D26D042AECD2CFFC92089789F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,6 +187,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71571DC31BE2419D00E9AB47 /* libTestFramework.a */,
 				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
@@ -481,6 +485,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MODULEMAP_FILE = "Target Support Files/FrameworkCocoapods/FrameworkCocoapods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = FrameworkCocoapods;
@@ -562,6 +570,10 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				MODULEMAP_FILE = "Target Support Files/FrameworkCocoapods/FrameworkCocoapods.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = FrameworkCocoapods;
