@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FrameworkCocoapods"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Testing Framework distribution with FrameworkCocoapods."
 s.description      = "This CocoaPod provides the ability to use a Framework that may have nothing :)."
 
